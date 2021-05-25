@@ -1,0 +1,20 @@
+.masalar{
+    -fx-background-color: #4CAF50;
+    -fx-background-radius:250;
+    -fx-font-size:20;
+    -fx-border-style:solid;
+    -fx-border-radius:50;
+    -fx-border-color: #4CAF50;
+    -fx-text-fill:white;
+}
+.masalar:hover{
+    -fx-background-color: #1E90FF;
+}
+.masalar:pressed {
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+.masalar:selected
+{
+    -fx-background-color: #1E90FF;
+}

@@ -1,0 +1,12 @@
+.menuler{
+    -fx-background-color: #f4511e;
+    -fx-background-radius:200;
+    -fx-font-size:20;
+    -fx-text-fill:white;
+}
+.menuler:hover{
+    -fx-background-color: #1E90FF;
+}
+.menuler:selected{
+    -fx-background-color: #1E90FF;
+}

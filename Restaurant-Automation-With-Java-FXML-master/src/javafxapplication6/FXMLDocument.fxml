@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="572.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication6.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="572.0" fitWidth="828.0">
+         <image>
+            <Image url="@../image/kisa_surede_iftar_menusu_nasil_hazirlanir_1526899565_0971.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="58.0" layoutY="14.0" prefHeight="87.0" prefWidth="699.0">
+         <children>
+            <ToggleButton fx:id="togglemasa1" ellipsisString="" layoutX="34.0" layoutY="14.0" mnemonicParsing="false" onAction="#masa_1" prefHeight="62.0" prefWidth="106.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="MASA-1" />
+            <ToggleButton fx:id="togglemasa2" layoutX="140.0" layoutY="14.0" mnemonicParsing="false" onAction="#masa_2" prefHeight="62.0" prefWidth="106.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="MASA-2" />
+            <ToggleButton fx:id="togglemasa3" layoutX="246.0" layoutY="14.0" mnemonicParsing="false" onAction="#masa_3" prefHeight="62.0" prefWidth="106.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="MASA-3" />
+            <ToggleButton fx:id="togglemasa4" layoutX="352.0" layoutY="14.0" mnemonicParsing="false" onAction="#masa_4" prefHeight="62.0" prefWidth="106.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="MASA-4" />
+            <ToggleButton fx:id="togglemasa5" layoutX="458.0" layoutY="14.0" mnemonicParsing="false" onAction="#masa_5" prefHeight="62.0" prefWidth="106.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="MASA-5" />
+            <ToggleButton fx:id="togglemasa6" layoutX="564.0" layoutY="14.0" mnemonicParsing="false" onAction="#masa_6" prefHeight="62.0" prefWidth="106.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="MASA-6" />
+         </children>
+      </Pane>
+      <Pane fx:id="gorev" layoutX="14.0" layoutY="101.0" prefHeight="314.0" prefWidth="790.0" visible="false">
+         <children>
+            <Button id="button1" fx:id="buttonsiparisal" defaultButton="true" layoutX="277.0" layoutY="38.0" mnemonicParsing="false" onAction="#siparis_al" prefHeight="98.0" prefWidth="265.0" styleClass="button1" stylesheets="@../style/button.css" text="Sipariş Al" />
+            <Button fx:id="buttonsiparisgoster" layoutX="277.0" layoutY="166.0" mnemonicParsing="false" onAction="#siparis_goruntule" prefHeight="98.0" prefWidth="265.0" styleClass="button1" stylesheets="@../style/button.css" text="Siparişleri Görüntüle" />
+         </children>
+      </Pane>
+      <Separator layoutX="9.0" layoutY="99.0" prefHeight="2.0" prefWidth="803.0" />
+      <Pane fx:id="cesit1" layoutX="30.0" layoutY="102.0" prefHeight="81.0" prefWidth="762.0" visible="false">
+         <children>
+            <ToggleButton fx:id="toggleanayemek" layoutX="37.0" layoutY="16.0" mnemonicParsing="false" onAction="#ana_yemek" prefHeight="50.0" prefWidth="152.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="Ana Yemek" />
+            <ToggleButton fx:id="toggleicecek" layoutX="173.0" layoutY="16.0" mnemonicParsing="false" onAction="#icecek_" prefHeight="50.0" prefWidth="152.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="İçecekler" />
+            <ToggleButton fx:id="togglesalata" layoutX="309.0" layoutY="16.0" mnemonicParsing="false" onAction="#salata_" prefHeight="50.0" prefWidth="152.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="Salatalar" />
+            <ToggleButton fx:id="toggletatli" layoutX="446.0" layoutY="16.0" mnemonicParsing="false" onAction="#tatli_" prefHeight="50.0" prefWidth="152.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="Tatlılar" />
+            <ToggleButton fx:id="togglearayemek" layoutX="581.0" layoutY="16.0" mnemonicParsing="false" onAction="#ara_yemek" prefHeight="50.0" prefWidth="152.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="Ara Yemekler" />
+            <Separator layoutX="43.0" layoutY="78.0" prefHeight="3.0" prefWidth="681.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="cesit2" layoutX="27.0" layoutY="184.0" prefHeight="322.0" prefWidth="762.0" visible="false">
+         <children>
+            <CubicCurve controlX1="-142.19998168945312" controlX2="602.5999755859375" controlY1="-16.79998779296875" controlY2="-16.79998779296875" endX="610.4000244140625" fill="DODGERBLUE" layoutX="152.0" startX="-150.0" stroke="BLACK" visible="false" />
+            <ToggleButton fx:id="j1" layoutX="6.0" layoutY="32.0" mnemonicParsing="false" onAction="#j1_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j2" layoutX="6.0" layoutY="77.0" mnemonicParsing="false" onAction="#j2_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j3" layoutX="6.0" layoutY="122.0" mnemonicParsing="false" onAction="#j3_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j4" layoutX="6.0" layoutY="167.0" mnemonicParsing="false" onAction="#j4_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j5" layoutX="6.0" layoutY="212.0" mnemonicParsing="false" onAction="#j5_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j6" layoutX="6.0" layoutY="257.0" mnemonicParsing="false" onAction="#j6_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j7" layoutX="213.0" layoutY="32.0" mnemonicParsing="false" onAction="#j7_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j8" layoutX="213.0" layoutY="77.0" mnemonicParsing="false" onAction="#j8_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j9" layoutX="213.0" layoutY="122.0" mnemonicParsing="false" onAction="#j9_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j10" layoutX="213.0" layoutY="167.0" mnemonicParsing="false" onAction="#j10_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j11" layoutX="213.0" layoutY="212.0" mnemonicParsing="false" onAction="#j11_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <ToggleButton fx:id="j12" layoutX="213.0" layoutY="257.0" mnemonicParsing="false" onAction="#j12_" prefHeight="36.0" prefWidth="201.0" styleClass="menuler" stylesheets="@../style/menuler.css" text="ToggleButton" />
+            <Spinner fx:id="adetsayac" editable="true" layoutX="498.0" layoutY="79.0" />
+            
+            <Label layoutX="498.0" layoutY="53.0" text="ADET" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Button fx:id="hesaplama" layoutX="498.0" layoutY="118.0" mnemonicParsing="false" onAction="#hesapla_" prefHeight="62.0" prefWidth="152.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="Hesapla" />
+            <Button fx:id="geri2_" layoutX="498.0" layoutY="181.0" mnemonicParsing="false" onAction="#geri2_" prefHeight="62.0" prefWidth="152.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="GERİ" />
+  
+   </children>
+      </Pane>
+      <Pane fx:id="masadurum" layoutX="14.0" layoutY="132.0" prefHeight="430.0" prefWidth="790.0" stylesheets="@../style/tab.css" visible="false">
+         <children>
+            <TabPane fx:id="tabpanel" layoutX="21.0" layoutY="14.0" prefHeight="368.0" prefWidth="762.0" style="-fx-background-color: #f4511e; -fx-border-color: #f4511e; -fx-tab-min-width: 101;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tab1" text="MASA-1">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f4511e;">
+                           <children>
+                              <TableView fx:id="masa1table" editable="true" layoutX="4.0" layoutY="7.0" prefHeight="294.0" prefWidth="754.0" style="-fx-background-color: #f4511e;" tableMenuButtonVisible="true">
+                                  
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tab2" text="MASA-2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="masa2table" editable="true" layoutX="4.0" layoutY="7.0" prefHeight="294.0" prefWidth="754.0" style="-fx-background-color: #f4511e;" tableMenuButtonVisible="true">
+                                
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="tab3" text="MASA-3">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="masa3table" editable="true" layoutX="4.0" layoutY="7.0" prefHeight="294.0" prefWidth="754.0" style="-fx-background-color: #f4511e;" tableMenuButtonVisible="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab4" text="MASA-4">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="masa4table" editable="true" layoutX="4.0" layoutY="7.0" prefHeight="294.0" prefWidth="754.0" style="-fx-background-color: #f4511e;" tableMenuButtonVisible="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab5" text="MASA-5">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="masa5table" editable="true" layoutX="4.0" layoutY="7.0" prefHeight="294.0" prefWidth="754.0" style="-fx-background-color: #f4511e;" tableMenuButtonVisible="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab6" text="MASA-6">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="masa6table" editable="true" layoutX="4.0" layoutY="7.0" prefHeight="294.0" prefWidth="754.0" style="-fx-background-color: #f4511e;" tableMenuButtonVisible="true" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Label fx:id="toplam1" layoutX="350.0" layoutY="388.0" prefHeight="36.0" prefWidth="99.0" textFill="WHITE" visible="true">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Separator layoutX="344.0" layoutY="383.0" orientation="VERTICAL" prefHeight="62.0" prefWidth="1.0" />
+            <Separator layoutX="446.0" layoutY="381.0" orientation="VERTICAL" prefHeight="62.0" prefWidth="1.0" />
+            <Button fx:id="sil" layoutX="141.0" layoutY="381.0" mnemonicParsing="false" onAction="#sil_" prefHeight="62.0" prefWidth="120.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="Sil" />
+            <Button fx:id="geri" layoutX="21.0" layoutY="381.0" mnemonicParsing="false" onAction="#geri_" prefHeight="62.0" prefWidth="120.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="GERİ" />
+            <Label fx:id="toplam2" layoutX="350.0" layoutY="376.0" prefHeight="36.0" prefWidth="72.0" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="toplam3" layoutX="350.0" layoutY="376.0" prefHeight="36.0" prefWidth="72.0" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="toplam4" layoutX="350.0" layoutY="376.0" prefHeight="36.0" prefWidth="72.0" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="toplam5" layoutX="350.0" layoutY="376.0" prefHeight="36.0" prefWidth="72.0" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="toplam6" layoutX="350.0" layoutY="376.0" prefHeight="36.0" prefWidth="72.0" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="hesapal" layoutX="637.0" layoutY="381.0" mnemonicParsing="false" onAction="#hesapal_" prefHeight="62.0" prefWidth="120.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="Hesap Al" />
+            <Button fx:id="kasa" layoutX="517.0" layoutY="381.0" mnemonicParsing="false" onAction="#kasa_" prefHeight="62.0" prefWidth="120.0" styleClass="masalar" stylesheets="@../style/masalar.css" text="Kasa" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

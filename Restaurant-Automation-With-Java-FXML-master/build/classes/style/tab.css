@@ -1,0 +1,13 @@
+.tab{
+    -fx-background-color: #4CAF50;
+    -fx-background-radius:20;
+    -fx-font-size:20;
+    
+}
+.tab:hover{
+    -fx-background-color: #1E90FF;
+}
+.tab:selected
+{
+    -fx-background-color: #1E90FF;
+}
